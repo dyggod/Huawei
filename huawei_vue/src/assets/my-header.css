@@ -1,0 +1,189 @@
+header {
+    background-color: #f9f9f9; }
+    header div.header-top {
+      text-align: center; }
+      header div.header-top p {
+        width: 1200px;
+        margin: 0 auto; }
+        header div.header-top p a > img {
+          width: 1920px;
+          margin-left: -30%; }
+      header div.header-top a[title=关闭] {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        top: 5px;
+        right: 0px;
+        background: url("../../public/img/echannel/icon/icon1.png");
+        background-position: -294px -380px;
+        z-index: 1000;
+        color: #fff;
+        font-size: 20px;
+        line-height: 30px; }
+    header div.header-sec {
+      padding: 0; }
+      header div.header-sec div {
+        width: 1200px;
+        height: 36px;
+        line-height: 36px;
+        margin: 0 auto; }
+        header div.header-sec div ul.sec-left {
+          float: left; }
+        header div.header-sec div ul.sec-right {
+          float: right; }
+        header div.header-sec div ul.sec-right > li + li::before, header div.header-sec div ul.sec-left > li + li::before {
+          color: #bbb;
+          content: '|'; }
+        header div.header-sec ul li span{
+            display: inline-block;
+            width: 11px;height:10px;
+            background-image: url('../../public/img/icon/icon1.png');
+            background-position: -116px -44px;
+        }
+        header div.header-sec div ul.sec-left > li, header div.header-sec div ul.sec-right > li {
+          float: left;
+          padding-left: 2px;
+          padding-right: 8px; }
+          header div.header-sec div ul.sec-left > li a, header div.header-sec div ul.sec-right > li a {
+            color: #666;
+            font-size: 12px;
+            text-decoration: none; }
+          header div.header-sec div ul.sec-left > li a:hover, header div.header-sec div ul.sec-right > li a:hover {
+            color: red; }
+        header div.header-sec div ul li.down:hover {
+          background-color: #fff; 
+          }
+          header div.header-sec div ul li.down:hover >a{
+              color:red;
+          }
+    /**** 第一个下拉ul */
+    header div.header-sec ul.down1 {
+        width: 120px;
+        height: 150px;
+        top: 33px;
+        left: 404px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: #fff; 
+        z-index: 1000;
+      }
+        header div.header-sec ul.down1 li {
+          text-align: center; }
+   
+    /**** 第二个下拉ul */
+    header div.header-sec ul.down2 {
+        top: 33px;
+        left: 950px;
+        width: 75px;
+        height: 80px;
+        background-color: #fff;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px; 
+        z-index: 1000;
+      }
+    /***** 第三个下拉ul */
+    header div.header-sec ul.down3{
+        top:33px;left:205px;
+        width:900px;
+        background-color:#fff;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        justify-content: space-around;
+        display: none !important;
+        z-index: 1000;
+    }
+    header div.header-sec ul.down3 li{
+        width:160px;
+        text-align: left;
+    }
+    header div.header-sec ul.down3 li p{
+        margin:0;
+        color:#000;
+        font-size: 16px;
+        font-weight:bold;
+    }
+    header div.header-sec ul.down3 li a{
+        display: inline-block;
+        width:80px;
+        color:#666;
+        font-size: 14px;
+    }
+    header div.header-sec ul.down3 li img{
+        width:50px;
+    }
+    header div.header-sec ul.sec-right li.wzdh:hover{
+        background-color: #fff;
+    }
+    header div.header-sec ul.sec-right li.wzdh:hover ul{
+        display:flex !important;
+    }
+    header div.header-sec ul.sec-right li.wzdh:hover span{
+        height:6px;
+        background-position: -116px -53px;
+    }
+
+    /*** 底部 header-bt */
+    header div.header-bt {
+      width: 1200px;
+      height: 60px;
+      margin: 0 auto; }
+      header div.header-bt div:first-child {
+        clear: both; }
+      header div.header-bt div.bt-logo {
+        float: left; }
+        header div.header-bt div.bt-logo img {
+          width: 205px;
+          height: 32px;
+          vertical-align: bottom; }
+      header div.header-bt div.bt-nav {
+        float: left;
+        width: 560px;
+        line-height: 28px; }
+        header div.header-bt div.bt-nav ul > li {
+          margin-left: 23px;
+          border-radius: 15px; }
+          header div.header-bt div.bt-nav ul > li a {
+            color: #000;
+            text-decoration: none;
+            font-size: 16px; }
+          header div.header-bt div.bt-nav ul > li a:hover {
+            color: red; }
+        header div.header-bt div.bt-nav ul > li:first-child, header div.header-bt div.bt-nav ul > li:nth-child(2) {
+          width: 80px;
+          height: 28px;
+          background-color: #ff8486; }
+          header div.header-bt div.bt-nav ul > li:first-child a, header div.header-bt div.bt-nav ul > li:nth-child(2) a {
+            color: #fff; }
+        header div.header-bt div.bt-nav ul > li:nth-child(2) {
+          background-color: #74c7ff; }
+        header div.header-bt div.bt-nav ul > li:first-child:hover, header div.header-bt div.bt-nav ul > li:nth-child(2):hover {
+          opacity: 0.8; }
+      header div.header-bt div.bt-search {
+        float: right;
+        width: 320px; }
+        header div.header-bt div.bt-search div {
+          background-color: #f0f0f0;
+          border-radius: 10px; }
+          header div.header-bt div.bt-search div input {
+            width:290px;
+            display: inline;
+            outline: 0;
+            border: 0;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+            padding-left: 15px; }
+          header div.header-bt div.bt-search div span.search {
+            float: right;
+            width: 20px;
+            height: 20px;
+            background-image: url("../../public/img/echannel/icon/icon1.png");
+            background-position: -230px -386px;
+            margin-right: 10px; }
+  /*定义.down样式 */
+      .uldown{
+          display:none;
+      }
+      .spanUp{
+        height:6px !important;
+        background-position: -116px -53px !important;  
+    }

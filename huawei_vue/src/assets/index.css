@@ -1,0 +1,221 @@
+/* 轮播图样式 */
+div.banner{
+    text-align: center
+}
+div.banner>div{
+    width:1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+div.banner>div>a>img{
+    width:1960px;height:550px;
+    margin-left: -30%;
+}
+.img1{
+    width:100%;
+    position: absolute;  
+    bottom:130px;left:0px;
+}
+div.banner div.bar { 
+width:200px !important; 
+position: absolute; 
+left:50%;  
+top:430px;
+z-index: 10;  
+
+}  
+div.banner span {  
+width: 20px;  
+height: 20px;  
+border: 1px solid;  
+border-radius: 50%;
+background: white;  
+display: inline-block;  
+margin-right: 10px;  
+}  
+div.banner span.active {  
+background: #bfd6b6 !important;  
+}   
+/* 左右按钮样式 */
+div.banner a.prev,div.banner a.next{
+  width: 65px;height:65px;
+  opacity:0.3;
+  position: relative;
+  border-radius: 50%;
+}
+div.banner a.prev{
+    top: -330px;
+    left:200px;
+    background: url('../../public/img/icon/icon2.png');
+    background-position: -318px -108px;
+    z-index: 999;
+}
+div.banner a.next{
+  top: -410px;
+  left:1200px;
+  background-image: url('../../public/img/icon/icon2.png');
+  background-position: -218px -108px;
+  z-index: 999;
+}
+div.banner a.prev:hover,div.banner a.next:hover{
+  opacity: 0.6;
+}
+
+/***轮播图左侧导航栏样式 */
+div.nav{
+    position: absolute;
+    top: 45px;
+    
+}
+div.nav>div{
+    width: 1200px;
+    margin:0 auto;
+}
+div.nav>div>ul{
+    float: left;
+    width:200px;height:410px;
+    border-radius: 8px;
+    background:rgba(255, 255, 255, 0.85);
+    box-shadow: 0 2px 26px rgba(0,0,0,0.07);
+}
+div.nav>div>ul>li{
+    padding:10px 20px 10px 20px;
+}
+div.nav>div>ul>li:hover{
+    background-color: #fff;
+}
+
+div.nav>div>ul>li>p{
+    margin:0;
+    text-align: left;
+    padding-left: 15px;
+}
+
+ /***轮播图下方副导航样式subnav */
+ div.subnav{
+    position: absolute;
+    top:480px;
+}
+div.subnav>div{
+    width: 1200px;height:88px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 10px 26px rgba(0,0,0,0.07);
+    border-radius: 10px;
+}
+div.subnav>div ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color:#666;
+}
+div.subnav>div>ul>li{
+    height:80px;
+    line-height: 80px;
+    margin-top: 5px;
+}
+div.subnav>div>ul>li+li{
+    border-left:1px solid #ddd; 
+}
+/* 第一个li */
+div.subnav>div>ul>li.l1{
+    width:270px;
+    padding-left: 25px;
+    margin-top: 15px;
+}
+div.subnav>div>ul>li.l1>div>p{
+    width:148px;height:30px;
+    margin: 0;
+    line-height: 30px;
+}
+div.subnav>div>ul>li.l1>div>p a{
+    text-decoration: none;
+}
+div.subnav>div>ul>li.l1>div>p:first-child a:hover{
+    color:red;
+}
+div.subnav>div>ul>li.l1>div>p:last-child>a:first-child{
+    display: inline-block;
+    width: 66px;height:20px;
+    border:1px solid red;
+    color: red;
+    line-height: 18px;
+    border-radius: 5px;
+}
+div.subnav>div>ul>li.l1>div>p:last-child>a:first-child:hover{
+    background-color: red;
+    color:#fff;
+}
+div.subnav>div>ul>li.l1>div>p:last-child>a:last-child{
+    display: inline-block;
+    width: 66px;height:20px;
+    background-color: #595454;
+    border-radius: 5px;
+    line-height: 20px;
+    color:#fde4b3;
+    margin-left: 10px;
+}
+div.subnav>div>ul>li.l1>div>p:last-child>a:last-child:hover{
+    background: #000;
+}
+/* 第二个li */
+div.subnav>div>ul>li.l2{
+    width: 660px;
+}
+li.l2>ul{
+    height:70px
+}
+li.l2>ul>li>a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color:#666;
+}
+ li.l2>ul>li>a:hover, li.l3 a:hover{
+     color:red;
+ }
+li.l2>ul>li>a>div{
+    width: 50px;height:50px;
+    border-radius: 50%;
+    background-image: url('../../public/img/subnav.png');
+    background-repeat: no-repeat; 
+    margin: 0 auto;   
+}
+ li.l2>ul>li>a>span{
+     display: block;
+     margin-top:-25px;
+ }
+
+/* 第三个li */
+div.subnav>div>ul>li.l3{
+    width:270px;
+    line-height: 40px;
+    font-size:12px;
+}
+li.l3 a{
+    color:#666;
+    text-decoration: none;
+}
+li.l3>div{
+    height:40px;
+}
+li.l3>div:first-child>span{
+    font-size: 16px;
+    color:#444;
+}
+ li.l3>div:last-child>a{
+     display: flex;
+ }
+li.l3>div:last-child>a>span:first-child{
+    display: inline-block;
+    width:30px;height:30px;
+    background-image:url('../../public/img/subnav.png');
+}
+li.l3>div:last-child>a>span:last-child{
+    display: inline-block;
+    width:50px;height:30px;
+    line-height: 30px;
+}
