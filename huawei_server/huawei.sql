@@ -144,11 +144,11 @@ INSERT INTO huawei_img VALUES(NULL,11,'img/mate20_pro/feileng/sm3.png','img/mate
 INSERT INTO huawei_img VALUES(NULL,11,'img/mate20_pro/feileng/sm4.png','img/mate20_pro/feileng/md1.png','img/mate20_pro/feileng/lg1.png');
 INSERT INTO huawei_img VALUES(NULL,11,'img/mate20_pro/feileng/sm5.png','img/mate20_pro/feileng/md1.png','img/mate20_pro/feileng/lg1.png');
 
-INSERT INTO huawei_img VALUES(NULL,12,'img/mate20 pro/fuhong/sm1.png','img/mate20 pro/fuhong/md1.png','img/mate20_pro/fuhong/lg1.png');
-INSERT INTO huawei_img VALUES(NULL,12,'img/mate20 pro/fuhong/sm2.png','img/mate20 pro/feileng/md1.png','img/mate20_pro/fuhong/lg1.png');
-INSERT INTO huawei_img VALUES(NULL,12,'img/mate20 pro/fuhong/sm3.png','img/mate20 pro/feileng/md1.png','img/mate20_pro/fuhong/lg1.png');
-INSERT INTO huawei_img VALUES(NULL,12,'img/mate20 pro/fuhong/sm4.png','img/mate20 pro/feileng/md1.png','img/mate20_pro/fuhong/lg1.png');
-INSERT INTO huawei_img VALUES(NULL,12,'img/mate20 pro/fuhong/sm5.png','img/mate20 pro/feileng/md1.png','img/mate20_pro/fuhong/lg1.png');
+INSERT INTO huawei_img VALUES(NULL,12,'img/mate20_pro/fuhong/sm1.png','img/mate20_pro/fuhong/md1.png','img/mate20_pro/fuhong/lg1.png');
+INSERT INTO huawei_img VALUES(NULL,12,'img/mate20_pro/fuhong/sm2.png','img/mate20_pro/feileng/md1.png','img/mate20_pro/fuhong/lg1.png');
+INSERT INTO huawei_img VALUES(NULL,12,'img/mate20_pro/fuhong/sm3.png','img/mate20_pro/feileng/md1.png','img/mate20_pro/fuhong/lg1.png');
+INSERT INTO huawei_img VALUES(NULL,12,'img/mate20_pro/fuhong/sm4.png','img/mate20_pro/feileng/md1.png','img/mate20_pro/fuhong/lg1.png');
+INSERT INTO huawei_img VALUES(NULL,12,'img/mate20_pro/fuhong/sm5.png','img/mate20_pro/feileng/md1.png','img/mate20_pro/fuhong/lg1.png');
 
 INSERT INTO huawei_img VALUES(NULL,13,'img/mate20_pro/feileng/sm1.png','img/mate20_pro/feileng/md1.png','img/mate20_pro/feileng/lg1.png');
 INSERT INTO huawei_img VALUES(NULL,13,'img/mate20_pro/feileng/sm2.png','img/mate20_pro/feileng/md1.png','img/mate20_pro/feileng/lg1.png');
@@ -156,11 +156,11 @@ INSERT INTO huawei_img VALUES(NULL,13,'img/mate20_pro/feileng/sm3.png','img/mate
 INSERT INTO huawei_img VALUES(NULL,13,'img/mate20_pro/feileng/sm4.png','img/mate20_pro/feileng/md1.png','img/mate20_pro/feileng/lg1.png');
 INSERT INTO huawei_img VALUES(NULL,13,'img/mate20_pro/feileng/sm5.png','img/mate20_pro/feileng/md1.png','img/mate20_pro/feileng/lg1.png');
 
-INSERT INTO huawei_img VALUES(NULL,14,'img/mate20 pro/fuhong/sm1.png','img/mate20 pro/fuhong/md1.png','img/mate20_pro/fuhong/lg1.png');
-INSERT INTO huawei_img VALUES(NULL,14,'img/mate20 pro/fuhong/sm2.png','img/mate20 pro/feileng/md1.png','img/mate20_pro/fuhong/lg1.png');
-INSERT INTO huawei_img VALUES(NULL,14,'img/mate20 pro/fuhong/sm3.png','img/mate20 pro/feileng/md1.png','img/mate20_pro/fuhong/lg1.png');
-INSERT INTO huawei_img VALUES(NULL,14,'img/mate20 pro/fuhong/sm4.png','img/mate20 pro/feileng/md1.png','img/mate20_pro/fuhong/lg1.png');
-INSERT INTO huawei_img VALUES(NULL,14,'img/mate20 pro/fuhong/sm5.png','img/mate20 pro/feileng/md1.png','img/mate20_pro/fuhong/lg1.png');
+INSERT INTO huawei_img VALUES(NULL,14,'img/mate20_pro/fuhong/sm1.png','img/mate20_pro/fuhong/md1.png','img/mate20_pro/fuhong/lg1.png');
+INSERT INTO huawei_img VALUES(NULL,14,'img/mate20_pro/fuhong/sm2.png','img/mate20_pro/feileng/md1.png','img/mate20_pro/fuhong/lg1.png');
+INSERT INTO huawei_img VALUES(NULL,14,'img/mate20_pro/fuhong/sm3.png','img/mate20_pro/feileng/md1.png','img/mate20_pro/fuhong/lg1.png');
+INSERT INTO huawei_img VALUES(NULL,14,'img/mate20_pro/fuhong/sm4.png','img/mate20_pro/feileng/md1.png','img/mate20_pro/fuhong/lg1.png');
+INSERT INTO huawei_img VALUES(NULL,14,'img/mate20_pro/fuhong/sm5.png','img/mate20_pro/feileng/md1.png','img/mate20_pro/fuhong/lg1.png');
 
 INSERT INTO huawei_img VALUES(NULL,15,'img/mate20_pro/feileng/sm1.png','img/mate20_pro/feileng/md1.png','img/mate20_pro/feileng/lg1.png');
 INSERT INTO huawei_img VALUES(NULL,15,'img/mate20_pro/feileng/sm2.png','img/mate20_pro/feileng/md1.png','img/mate20_pro/feileng/lg1.png');

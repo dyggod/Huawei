@@ -60,16 +60,37 @@ router.get('/login',(req,res)=>{
         }
     })
 });
-//功能2.1  用户登录测试端口
-router.get('/layout',(req,res)=>{
-    //console.log(req.session);
+//功能2.1  用户注册端口
+router.get('/register',(req,res)=>{
+    var uname=req.query.uname;
+    var upwd=req.query.upwd;
+    console.log(uname,upwd);
+    var sql="insert into huawei_user values(NULL,?,?)";
+    pool.query(sql,[uname,upwd],(err,result)=>{
+        if(err){throw err};
+        if(result.affectedRows>0){
+            res.send("200");
+        }
+    })
 
+})
+//功能2.2 注册时验证用户名端口
+router.get('/blurUname',(req,res)=>{
+    var uname=req.query.uname;
+    pool.query('select uname from huawei_user where uname=?',[uname],(err,result)=>{
+        if(err){throw err};
+        if(result.length>0){
+            res.send("200");
+        }else{
+            res.send("404")
+        }
+    })
 })
 
 //功能3  购物车页 
 router.get('/cart',(req,res)=>{
     console.log(req.session.uid)
-    var uid=2;//req.session.uid;
+    var uid=req.session.uid;
     //console.log(uid);
     var output={
         cart:[],
@@ -86,7 +107,6 @@ router.get('/cart',(req,res)=>{
                 //console.log(output.cart[i])
                 var pid=output.cart[i].pid;
                 //console.log(pid+'打桩2');
-                
                 pool.query('select title,price,spec,show_img from huawei_product where pid=?',[pid],(err,result)=>{
                     if(err){throw err};
                     if(result.length>0){
@@ -96,7 +116,7 @@ router.get('/cart',(req,res)=>{
                     if(i==output.cart.length-1){ //如果遍历到最后,则返回output到客户端
                         //output.product=arr;
                         res.send(output);
-                        console.log(output);
+                        //console.log(output);
                     }
                 })               
             }        
@@ -127,6 +147,34 @@ router.get('/cart',(req,res)=>{
             if(err){throw err};
             if(result.affectedRows>0){
                 res.send("200");
+            }
+        })
+    })
+		//删除指定购物车
+	router.get('/delCart',(req,res)=>{
+		var cid=req.query.cid;
+		pool.query('DELETE FROM huawei_cart WHERE cid = ?',[cid],(err,result)=>{
+			if(err){ throw err};
+			if(result.affectedRows>0){
+				res.send('200')
+			}
+			
+		})
+    })
+    //3.2加入购物车事件
+    router.get('/addCart',(req,res)=>{
+        //接受客户端传来的用户的uid以及以及商品的pid
+        var uid=req.query.uid;
+        var pid=req.query.pid;
+        //sql语句
+        var sql="INSERT INTO huawei_cart VALUES(NULL,?,?,1,1)";
+        //执行
+        pool.query(sql,[uid,pid],(err,result)=>{
+            if(err){throw err};
+            if(result.affectedRows>0){
+                res.send("200")
+            }else{
+                res.send('404')
             }
         })
     })
